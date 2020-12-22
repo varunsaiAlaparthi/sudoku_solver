@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varun sai portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDjiwZECEJwT4IjHysrVKdoRbLRLUUiydQ",
+    authDomain: "portfolio-a922c.firebaseapp.com",
+    databaseURL: "https://portfolio-a922c.firebaseio.com",
+    projectId: "portfolio-a922c",
+    storageBucket: "portfolio-a922c.appspot.com",
+    messagingSenderId: "334404152819",
+    appId: "1:334404152819:web:1af9da7e7b21726eca7686",
+    measurementId: "G-FBR4MB298D"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+</head>
+<body>
+    <h1 class="name">VARUN SAI</h1>
+    <h2 style="text-align: center;">Sudoku Solver</h2>
+    <form id='myform'>
+    <table id="grid" border="1" style="border-collapse: collapse;">
+        <tr class="row">
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+        </tr>
+        <tr class="row">
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+        </tr>
+        <tr class="row1">
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+        </tr>
+        <tr class="row">
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+        </tr>
+        <tr class="row">
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+        </tr>
+        <tr class="row1">
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+        </tr>
+        <tr class="row">
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+        </tr>
+        <tr class="row">
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+        </tr>
+        <tr class="row">
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+            <td class="cell"><input type="text" class="a" maxlength="1"></td>
+        </tr>
+    </table>
+
+    <div class="container">
+    
+    <input class="b" type="submit" value="Solution">
+    </div>
+    
+    </form>
+
+    <div class='random_generator'>
+        <h2 style="text-align: center;">Password generator</h2>
+        <input id='pass' placeholder="Password size"type="text">
+        <input id='pre' type="button" value="generate_password">
+
+    </div>
+    
+<script src="app.js"></script>
+</body>
+</html>
